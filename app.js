@@ -38,6 +38,7 @@ app.post('/client/:id', (req, res) => {
 });
 
 
-const host = '127.0.0.1';
-const port = 3000;
-http.listen(port, host, () => console.log(`Server listens http://${host}:${port}`));
+
+
+const port = process.env.PORT || 3000;
+http.listen(port);
